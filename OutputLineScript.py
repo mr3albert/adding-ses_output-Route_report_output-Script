@@ -4,7 +4,7 @@
 import os #using os.listdir, os.path.dirname, os.path.abspath, os.chdir...
 import time
 
-DirNArray = os.listdir() #turning all of the test case directories into an array
+DirNArray = os.listdir() #turning all of the test case files into an array
 subDirArray = os.listdir() #testcase directory name array  
 address = os.path.dirname(os.path.abspath(__file__)) #address of the current directory s
 subDir = ''
@@ -12,8 +12,10 @@ logBool = False
 sessBool = False
 
 for i in range(len(DirNArray)):
-    subDir = os.path.join(address,DirNArray[i])
-    os.chdir(subDir)
+    subDir = os.path.join(address,DirNArray[i])#appends the current directory address with a subdirectory name to form the address for the sub directory
+    os.chdir(subDir)#change the current working directory to one of the subdir
+
+    #listing the names of the entries in the directory to find the directory has logFile and sesFile 
     subDirArray = os.listdir()
     for i in range(len(subDirArray)
     	if subDirArray[i] == 'logFile' 

@@ -8,7 +8,7 @@ DirNArray = os.listdir() #turning all of the test case files into an array
 subDirArray = os.listdir() #testcase directory name array  
 address = os.path.dirname(os.path.abspath(__file__)) #address of the current directory s
 subDir = ''
-logBool = False
+logBools = False
 sessBool = False
 
 for i in range(len(DirNArray)):
@@ -17,16 +17,16 @@ for i in range(len(DirNArray)):
 
     #listing the names of the entries in the directory to find the directory has logFile and sesFile 
     subDirArray = os.listdir()
-    for i in range(len(subDirArray)
-    	if subDirArray[i] == 'logFile' 
-    		logBool = True
-    	if subDirArray[i] == 'sesFile'
+    for i in range(len(subDirArray)):
+    	if subDirArray[i] == 'logFile': 
+    		logBools = True
+    	if subDirArray[i] == 'sesFile':
     		sessBool = True
 
-    if(logBool == False)
-    	os.makedir('logFile')
-    if(sessBool == False)
-    	os.makedir('sesFile')
+    if(logBools == False):
+    	os.makedirs('logFile')
+    if(sessBool == False):
+    	os.makedirs('sesFile')
 
 
 '''

@@ -1,5 +1,5 @@
 import os 
 
-for i in range(100):
+for i in range(5):
     if not os.path.exists(str(i)):
         os.makedirs(str(i))

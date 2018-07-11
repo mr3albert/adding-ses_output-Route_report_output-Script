@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #this program adds a log output line, a .ses output line, log dir, sess dir, and a quit command in the .scmd file of each test case.
 #it will check if each .scmd file in the each test case has the aforementioned three lines then add them as needed 
 #Albert Liao, 6/27/2018 
@@ -20,7 +22,7 @@ for i in range(len(DirNArray)):
 
     #listing the names of the entries in the directory to find the directory has logFile and sesFile 
     subDirArray = os.listdir()
-    
+
     for i in range(len(subDirArray)):
         if subDirArray[i] == 'logFile': 
             logBools = True

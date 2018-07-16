@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #this program adds a log output line, a .ses output line, log dir, sess dir, and a quit command in the .scmd file of each test case.
 #it will check if each .scmd file in the each test case has the aforementioned three lines then add them as needed 
 #Albert Liao, 6/27/2018 

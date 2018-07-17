@@ -4,6 +4,6 @@ enable output_logfile out.log
 
 last three lines of the SCMD file:
 
-ses_output C:\simplify\AUTO\Case1\cas\Top_driver_Location1\sesFile\check_final_result_20180628_15-47-20-0994.ses
-route_report_output C:\simplify\AUTO\Case1\cas\Top_driver_Location1\logFile\check_final_result_20180716_12-15-48-0547.log
+ses_output sesFile\check_final_result_20180628_15-47-20-0994.ses
+route_report_output logFile\check_final_result_20180716_12-15-48-0547.log
 quit

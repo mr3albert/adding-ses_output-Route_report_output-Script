@@ -1,4 +1,4 @@
-#!/bin/bash
+#! python3
 
 #this program adds a log output line, a .ses output line, log dir, sess dir, a
 #quit command, enable output in the .scmd file of each test case.
